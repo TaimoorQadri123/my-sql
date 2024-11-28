@@ -1,0 +1,13 @@
+-- CREATE DATABASE organization 
+
+/*CREATE TABLE Students (
+  id int,
+    name varchar(15),
+    course varchar(25)
+)*/
+
+-- ALTER TABLE Students ADD column fee int ,ADD  email varchar(15)
+ -- ALTER TABLE Students MODIFY name varchar(15) NOT NULL
+ -- ALTER TABLE Students DROP email
+ -- ALTER TABLE Students RENAME STDtable 
+ ALTER CHANGE name stdname nme
