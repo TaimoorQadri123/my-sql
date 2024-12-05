@@ -1,0 +1,52 @@
+/*CREATE TABLE employee (
+    ID int(9) PRIMARY KEY AUTO_INCREMENT,
+    FIRST_name varchar(10) NOT NULL,
+    LAST_name varchar(10) NOT NULL,
+    Age int NOT NULL,
+    Gender char(1) NOT NULL,
+    Contact varchar(50) NOT NULL,
+    Address varchar(50) NOT NULL,
+    Salary int NOT NULL,
+    Department varchar(25) NOT NULL,
+    Date_of_joining date NOT NULL
+);*/
+
+INSERT INTO employee (FIRST_name, LAST_name, Age, Gender, Contact, Address, Salary, Department, Date_of_joining)
+VALUES 
+('Hammad', 'Ali', 19, 'M', '8745984', 'Clifton', 75850, 'Software Engineering', '2022-06-10'),
+('Sara', 'Khan', 25, 'F', '9843745', 'Gulshan', 85000, 'HR', '2021-04-15'),
+('Ali', 'Ahmed', 30, 'M', '7364829', 'North Nazimabad', 95000, 'Finance', '2019-11-20'),
+('Ayesha', 'Malik', 28, 'F', '6574932', 'DHA', 72000, 'Marketing', '2020-03-10'),
+('Omer', 'Shaikh', 22, 'M', '9087654', 'PECHS', 65000, 'IT Support', '2022-09-05'),
+('Sana', 'Tariq', 27, 'F', '4537890', 'Korangi', 67000, 'Customer Support', '2020-07-12'),
+('Zain', 'Raza', 35, 'M', '6723451', 'Bahadurabad', 88000, 'Management', '2018-01-23'),
+('Maha', 'Iqbal', 23, 'F', '7892345', 'Shah Faisal', 61000, 'Logistics', '2021-09-17'),
+('Farhan', 'Hussain', 29, 'M', '8765423', 'Nazimabad', 89000, 'Operations', '2020-12-01');
+
+           -- 3 
+-- UPDATE employee set Date_of_joining = "2022-02-10" WHERE id = 1
+
+        -- Q1
+-- SELECT * FROM employee where gender = "F"
+
+       -- Q2(A)
+
+-- SELECT * from employee ORDER by salary DESC LIMIT 3
+-- Q2(B)
+          
+
+ -- SELECT * from employee WHERE gender="F" ORDER by salary DESC LIMIT 3
+ 
+          
+ 
+ -- SELECT * from employee WHERE gender="M" ORDER by salary DESC LIMIT 3
+ 
+           -- Q3(A)
+    
+--  UPDATE employee set SALARY = SALARY+2500
+
+           -- Q3(B)
+ -- UPDATE employee set SALARY = SALARY * 1.05 WHERE Department="Management"
+ 
+         -- Q6)
+ -- UPDATE employee set SALARY = SALARY+1000 WHERE Department != "Management"
